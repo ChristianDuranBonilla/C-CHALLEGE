@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none
+}
+
+nav{
+    display: block;
+}
+
+header{
+    display: block;
+    padding: 60px;
+    background-image: url("background-header.jpg");
+    background-color: teal;
+    background-position: center;
+    background-size: cover;
+}
+
+header>div>h1,h5{
+    color: white;
+}
+
+header>div>input{
+    color:grey;
+}
+ 
+header>p{
+    color:white;
+}
+
+header>button{
+    background-color: turquoise;
+    color:white;
+}
+
+body>div{
+    background-color: white;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+head>div a{
+    color: grey;
+    text-decoration: solid;
+}
+
+main{
+    display: block;
+    background-color: white;
+    color: black;
+}
+
+#buscar{
+    background-color: white;
+    background-position: center;
+    display: flex;
+    align-content: center;
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 70vw;
+}
