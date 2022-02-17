@@ -9,49 +9,70 @@
 </head>
 <body>
     <nav>
-        <button>P</button>
-        <button>...</button>
-        <button>Únete</button>
-    </nav>
-    <header>
-        <img src="" alt="Imagen de fondo">
-        <div>
-            <h1>Las mejores fotos de stock gratis, imágenes libres de regalías y vídeos compartidos por creadores.</h1>
-            <section>
-                <input type="text" id="buscar" name="buscar" value="Buscar fotos y vídeos gratuitos">
-                <input type="submit" value="O--">
-            </section>
-            <h5>Sugerencias: valentine's day, Rosa roja, día de San Valentín, vino, reunión de negocios, más</h5>
+        <div class="nav-left">
+            <button class="buttonp">P</button>
+            <a href="a" class="button-text">Pexels</a>
         </div>
-        <p>Tomada por Jess Loiterton</p>
-    </header>
-    <div>
-        <a href="a">Inicio</a>
-        <a href="a">Descubrir</a>
-        <a href="a">Vídeos</a>
-        <a href="a">Lo más visitado</a>
-        <a href="a">Retos</a>
+        <div class="nav-right">
+            <a href="b" class="button-text2">Explorar</a>
+            <a href="c" class="button-text2">Licencia</a>
+            <a href="d" class="button-text2">Subir</a>
+            <a href="e" class="button-text2 button-special">···</a>
+            <button class="buttonu">Únete</button>
+        </div>
+    </nav>
+    <footer>
+        <header class="header">
+            <!-- <div class="background">
+                <img src="images/background-header.jpg" alt="Imagen de fondo">
+            </div> -->
+            <div class="headerdiv">
+                <h1 class="titulito">Las mejores fotos de stock gratis, imágenes libres de regalías y vídeos compartidos por creadores.</h1>
+                <section class="containersearch">
+                    <input class="buscar" autofocus type="text" id="buscar" name="buscar" placeholder="Buscar fotos y vídeos gratuitos">
+                    <input class="iconitosearch" type="submit" value="">
+                </section>
+                <h5 class="textito-sugerencia">Sugerencias: </h5>
+                <div class="textito-enfrente">
+                    <a class="textitito" href="1">valentine's day, </a>
+                    <a class="textitito" href="2">Rosa roja, </a>
+                    <a class="textitito" href="3">día de San Valentín, </a>
+                    <a class="textitito" href="4">vino, </a>
+                    <a class="textitito" href="5">reunión de negocios, </a>
+                    <a class="textitito" href="6">más...</a>
+                </div>
+            </div>
+        </header>
+        <section class="headerfoot-text">
+            <p>Tomada por Jess Loiterton</p>
+    </footer>
+    </section>
+    <div class='seminav'>
+        <a class="text-seminav" href="a">Inicio</a>
+        <a class="text-seminav" href="a">Descubrir</a>
+        <a class="text-seminav" href="a">Vídeos</a>
+        <a class="text-seminav" href="a">Lo más visitado</a>
+        <a class="text-seminav" href="a">Retos</a>
     </div>
-    <main>
-        <section>
-            <h3>Fotos de stock gratis</h3>
-            <select name="Seleccion" id="Seleccion">
+    <main class="main">
+        <section class="textitoabajo">
+            <h3 class="text-main">Fotos de stock gratis</h3>
+            <select class="options" name="Seleccion" id="Seleccion" >
                 <option value="Tendencias">Tendencias</option>
                 <option value="Lonuevo">Lo nuevo</option>
             </select>
         </section>
-        <label for="Seleccion">></label>
-        <img src="" alt="Imagen">
-        <img src="" alt="Imagen">
-        <img src="" alt="Imagen">
-        <img src="" alt="Imagen">
-        <img src="" alt="Imagen">
-        <img src="" alt="Imagen">
-        <img src="" alt="Imagen">
-        <img src="" alt="Imagen">
-        <img src="" alt="Imagen">
-        <img src="" alt="Imagen">
-        <img src="" alt="Imagen">
+        <div class="photos-container">
+            <div class="photos-columna"></div>
+            <div class="photos-columna"></div>
+            <div class="photos-columna"></div>
+            <img class="photos" src="images/1.png" alt="Imagen">
+            <img class="photos" src="images/2.png" alt="Imagen">
+            <img class="photos" src="images/3.jpg" alt="Imagen">
+            <img class="photos" src="images/4.jpg" alt="Imagen">
+            <img class="photos" src="images/5.jpg" alt="Imagen">
+            <img class="photos" src="images/6.jpeg" alt="Imagen">
+        </div>
     </main>
 </body>
 </html>

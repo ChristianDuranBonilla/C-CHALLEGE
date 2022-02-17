@@ -1,65 +1,267 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: white;
 }
 
 nav{
     display: block;
+    background-color: none;
+    position: fixed;
+    padding: .75rem;
+    width: 100%;
+    z-index: 1;
 }
 
-header{
-    display: block;
-    padding: 60px;
-    background-image: url("background-header.jpg");
-    background-color: teal;
+.nav-left{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.nav-right{
+    display: inline-flex;
+    align-items: center;
+    float: right;
+    margin-left: auto;
+    margin-right: 1.5rem;
+}
+
+.buttonp{
+    display: inline-block;
+    background-color: #05A081;
+    color: white;
+    height: 36px;
+    width: 36px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.buttonu{
+    display: inline-block;
+    background-color: #05A081;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.button-text{
+    color: white;
+    text-decoration: double;
+    margin-left: 1rem;
+    font-size: 16px;
+    font-weight: 640;
+}
+
+.button-text2{
+    color: white;
+    text-decoration: double;
+    margin-right: 1.75rem;
+}
+
+.button-special{
+    font-size: 30px;
+    text-align:  center;
+}
+
+footer{
+    background-image: url(https://cdn.wallpaperhub.app/cloudcache/6/9/0/e/e/f/690eefe3ba1f553e0ea527f51ee407b604b681b4.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
-header>div>h1,h5{
+.header{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1.15rem;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    z-index: 1;
+}
+
+.background{
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerdiv{
+    display: block;
+    max-width: 650px;
+    width: 100%;
+    z-index: 3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulito{
+    display: block;
+    text-align: left;
+    font-size: 33px;
+    line-height: 45px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
     color: white;
 }
 
-header>div>input{
-    color:grey;
-}
- 
-header>p{
-    color:white;
-}
-
-header>button{
-    background-color: turquoise;
-    color:white;
+.containersearch{
+    background-color: white;
+    display: flex;
+    border: none;
+    width: 90%;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 4%), 0 4px 16px 0 rgb(44 50 65 / 8%);
 }
 
-body>div{
+.buscar{
+    display: inline-flex;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: 1;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background: transparent;
+    border: none;
+    color: #1a1a1a;
+    padding: 0.9rem 1.25rem;
+    width: 1000px;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 16px;
+}
+.iconitosearch{
+    background-color:white;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/004/405/887/non_2x/magnifying-glass-icon-search-loupe-lens-glass-magnifier-find-zoom-sign-icon-free-free-vector.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    position: relative;
+    width: 50px;
+    border: none;
+    padding: 0.9rem 1.25rem;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.textito-sugerencia{
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.textito-enfrente{
+    display: inline-block;
+    font-size: 12px;
+    color: white;
+}
+
+.textitito{
+    color: white;
+}
+
+.headerfoot{
+    display: block;
+}
+
+.headerfoot-text{
+    color: white;
+    text-align: right;
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: 300;
+    opacity: 0.5;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.seminav{
     background-color: white;
     text-align: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 1rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%)
 }
 
-head>div a{
-    color: grey;
-    text-decoration: solid;
+.text-seminav{
+    color: #5e5e5e;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-right: 2rem;
 }
 
-main{
+.main{
     display: block;
-    background-color: white;
-    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-#buscar{
-    background-color: white;
-    background-position: center;
+.textitoabajo{
+    display: block;
+    padding-top: 15px;
+}
+
+.text-main{
+    display: inline-block;
+    margin-left: 0.75rem;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.options{
+    display: inline-block;
+    float: right;
+    padding: 6px 13px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    min-height: 32px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.photos-container{
+    padding: 0;
     display: flex;
-    align-content: center;
-    text-align: left;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 10px;
-    padding-right: 70vw;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.photos{
+    display: flex;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    position: relative;
+    margin-bottom: 15px;
+    height: 100%;
+    width: 300px;
 }
